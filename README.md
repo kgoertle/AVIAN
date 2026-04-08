@@ -67,7 +67,7 @@ Please ensure that the [] are removed if defining `context` classes!
   - Interval-level aggregation for logging raw detection tracks within a user-defined time interval.
   - Session summaries 
   - Interaction tracking (focus vs. context classes)
-  - Motion 
+  - Active presence logged by tracking motion via bounding-box displacements. 
 - Exports structured `.csv` summaries:
   - `counts.csv`, `average_counts.csv`
   - `interval_results.csv`, `session_summary.csv`
@@ -75,6 +75,7 @@ Please ensure that the [] are removed if defining `context` classes!
   - `motion_counts.csv`
   - `motion_intensity.csv`
   - `motion_prevalence.csv`
+
 Supports automatic calculation of ratios (e.g., M:F) & normalized detection rates.
 
 ### Directory & Output Structure
