@@ -191,7 +191,8 @@ save: Measurements saved to: "measurements/camera-feeds/<usb>/<system_timestamp>
 exit: All detection threads safely terminated.
 ```
 
-## Default example model trained on _7 classes_:
+## Example Model
+Trained on _7 classes_:
   - `M` (Male Passer domesticus)
   - `F` (Female Passer domesticus)
   - `Feeder`
@@ -205,6 +206,18 @@ The model was trained **using this pipeline** & has been used primarily for test
 The purpose of this model in particular is use for tracking & logging basic behavioral attributes of captive _Passer domesticus_ subjects influenced by various intestinal microbial communities over an individual's development.
 
 To be clear, the model is still in development & included for users to demonstrate running inference using a custom model trained through the pipeline.
+
+## Weights & Biases Integration
+As briefly mentioned, _Weights & Biases_ (W&B) was integrated into the training side of the pipeline to track & compare training sessions between one another. 
+
+The `wandb_config.yaml` file was built with the intention of allowing for integration to be simple and straight-forward. W&B logging is set to `false` by default upon initial installation. 
+```
+enabled: false            # set flag to 'true' to enable logging
+project: <project_name>   # set this as your project's name in W&B
+entity: <user/team_name>  # set this as your username or team name
+mode: online              # can be set as 'offline' for offline logging
+```
+
 
 ## Installation
 #### 1. Install MiniConda or Conda:
