@@ -77,7 +77,7 @@ Please ensure that the [] are removed if defining `context` classes!
   - `motion_prevalence.csv`
 Supports automatic calculation of ratios (e.g., M:F) & normalized detection rates.
 
-### Directory and Output Structure
+### Directory & Output Structure
 Integrates a **clean, timestamped log structure** for both camera feeds & videos:
 
 **Camera sources:**
@@ -171,6 +171,9 @@ save: Measurements saved to: "measurements/video-in/<video>/<video_timestamp>/sc
       - interval_results.csv
       - session_summary.csv
       - interactions.csv
+      - motion_counts.csv
+      - motion_intensity.csv
+      - motion_prevalence.csv
 
 save: Measurements for <usb>
 save: Measurements saved to: "measurements/camera-feeds/<usb>/<system_timestamp>/scores"
@@ -181,6 +184,9 @@ save: Measurements saved to: "measurements/camera-feeds/<usb>/<system_timestamp>
       - interval_results.csv
       - session_summary.csv
       - interactions.csv
+      - motion_counts.csv
+      - motion_intensity.csv
+      - motion_prevalence.csv
 
 exit: All detection threads safely terminated.
 ```
